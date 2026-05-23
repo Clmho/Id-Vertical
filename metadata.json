@@ -1,0 +1,6 @@
+{
+  "name": "ID Vertical",
+  "description": "ID Vertical — Ar Condicionado & Alpinismo Industrial. Novo Hamburgo, RS. Altura e climatização com máxima segurança e excelência profissional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

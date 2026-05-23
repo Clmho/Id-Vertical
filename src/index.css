@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Barlow Condensed", sans-serif;
+  --color-brand-red: #D32F2F;
+  --color-brand-black: #1A1A1A;
+  --color-brand-gray: #757575;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Offset for fixed navbar */
+}
+
+/* Customized scrollbar for a neat professional feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D32F2F;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B71C1C;
+}
+
+/* Ripple animation & keyframe declarations for the WhatsApp pulse */
+@keyframes custom-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+}
+
+.animate-whatsapp-pulse {
+  animation: custom-pulse 2s infinite ease-in-out;
+}
+
